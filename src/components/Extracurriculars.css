@@ -1,0 +1,409 @@
+/* Extracurriculars Section */
+.extracurriculars {
+  padding: 6rem 0;
+  background: linear-gradient(135deg, #ffffff 0%, #f8f9fa 100%);
+  position: relative;
+  overflow: hidden;
+}
+
+.extracurriculars-container {
+  max-width: 1400px;
+  margin: 0 auto;
+  padding: 0 3rem;
+}
+
+/* Section Header */
+.section-header {
+  text-align: center;
+  margin-bottom: 4rem;
+  opacity: 0;
+  transform: translateY(30px);
+  transition: all 0.8s ease;
+}
+
+.section-header.animate {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+.section-tag {
+  display: inline-block;
+  background: linear-gradient(135deg, rgba(102, 126, 234, 0.1), rgba(118, 75, 162, 0.1));
+  padding: 0.5rem 1rem;
+  border-radius: 50px;
+  font-size: 0.85rem;
+  font-weight: 600;
+  color: #667eea;
+  margin-bottom: 1rem;
+  letter-spacing: 0.5px;
+}
+
+.section-title {
+  font-size: 2.8rem;
+  font-weight: 700;
+  color: #1a1a2e;
+  margin-bottom: 1rem;
+  line-height: 1.2;
+}
+
+.title-accent {
+  display: block;
+  font-size: 1.8rem;
+  color: #667eea;
+  margin-top: 0.5rem;
+}
+
+.section-subtitle {
+  font-size: 1.1rem;
+  color: #718096;
+  max-width: 600px;
+  margin: 0 auto;
+}
+
+/* Activities Grid */
+.activities-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+  gap: 2rem;
+  margin-bottom: 4rem;
+  opacity: 0;
+  transform: translateY(30px);
+  transition: all 0.8s ease 0.2s;
+}
+
+.activities-grid.animate {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+.activity-card {
+  background: white;
+  border-radius: 24px;
+  padding: 1.5rem;
+  transition: all 0.3s ease;
+  border: 1px solid rgba(102, 126, 234, 0.1);
+  animation: fadeInUp 0.6s ease forwards;
+  opacity: 0;
+}
+
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.activity-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 20px 40px rgba(0, 0, 0, 0.05);
+  border-color: rgba(102, 126, 234, 0.2);
+}
+
+.card-header {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  margin-bottom: 1.5rem;
+  padding-bottom: 1rem;
+  border-bottom: 3px solid;
+}
+
+.card-icon {
+  width: 50px;
+  height: 50px;
+  border-radius: 15px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 1.8rem;
+  transition: all 0.3s ease;
+}
+
+.activity-card:hover .card-icon {
+  transform: scale(1.05);
+}
+
+.card-title {
+  font-size: 1.3rem;
+  font-weight: 700;
+  color: #1a1a2e;
+  margin: 0;
+}
+
+/* Activities List */
+.activities-list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.75rem;
+}
+
+.activity-tag {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5rem;
+  padding: 0.5rem 1rem;
+  background: #f8f9fa;
+  border-radius: 50px;
+  font-size: 0.85rem;
+  color: #4a5568;
+  transition: all 0.3s ease;
+}
+
+.activity-tag:hover {
+  background: rgba(102, 126, 234, 0.1);
+  transform: translateX(3px);
+}
+
+.tag-dot {
+  width: 6px;
+  height: 6px;
+  border-radius: 50%;
+}
+
+/* Stats Banner */
+.activities-stats {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 3rem;
+  margin-bottom: 4rem;
+  padding: 2rem;
+  background: linear-gradient(135deg, rgba(102, 126, 234, 0.05), rgba(118, 75, 162, 0.05));
+  border-radius: 20px;
+  opacity: 0;
+  transform: translateY(30px);
+  transition: all 0.8s ease 0.4s;
+}
+
+.activities-stats.animate {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+.stat-item {
+  text-align: center;
+}
+
+.stat-number {
+  font-size: 2.5rem;
+  font-weight: 800;
+  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  margin-bottom: 0.5rem;
+}
+
+.stat-label {
+  color: #718096;
+  font-size: 0.9rem;
+}
+
+.stat-divider {
+  width: 2px;
+  height: 40px;
+  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+  opacity: 0.2;
+}
+
+/* Quote Section */
+.activities-quote {
+  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+  padding: 3rem;
+  border-radius: 24px;
+  text-align: center;
+  margin-bottom: 4rem;
+  position: relative;
+  overflow: hidden;
+  opacity: 0;
+  transform: translateY(30px);
+  transition: all 0.8s ease 0.5s;
+}
+
+.activities-quote.animate {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+.quote-icon {
+  font-size: 6rem;
+  font-family: serif;
+  opacity: 0.1;
+  position: absolute;
+  top: 20px;
+  left: 30px;
+  color: white;
+}
+
+.quote-text {
+  font-size: 1.3rem;
+  line-height: 1.6;
+  color: white;
+  margin-bottom: 1rem;
+  position: relative;
+  z-index: 1;
+  font-style: italic;
+}
+
+.quote-author {
+  color: rgba(255, 255, 255, 0.8);
+  font-size: 0.9rem;
+  position: relative;
+  z-index: 1;
+}
+
+/* CTA Section */
+.activities-cta {
+  text-align: center;
+  padding: 2rem;
+  background: white;
+  border-radius: 20px;
+  border: 2px dashed rgba(102, 126, 234, 0.3);
+  opacity: 0;
+  transform: translateY(30px);
+  transition: all 0.8s ease 0.6s;
+}
+
+.activities-cta.animate {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+.activities-cta p {
+  font-size: 1.1rem;
+  color: #1a1a2e;
+  margin-bottom: 1rem;
+}
+
+.cta-button {
+  padding: 0.875rem 2rem;
+  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+  color: white;
+  border: none;
+  border-radius: 50px;
+  font-size: 1rem;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.cta-button:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 10px 20px rgba(102, 126, 234, 0.3);
+}
+
+/* Responsive Design */
+@media screen and (max-width: 1024px) {
+  .extracurriculars-container {
+    padding: 0 2rem;
+  }
+  
+  .section-title {
+    font-size: 2.5rem;
+  }
+  
+  .title-accent {
+    font-size: 1.6rem;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .extracurriculars {
+    padding: 4rem 0;
+  }
+  
+  .extracurriculars-container {
+    padding: 0 1.5rem;
+  }
+  
+  .section-title {
+    font-size: 2rem;
+  }
+  
+  .title-accent {
+    font-size: 1.3rem;
+  }
+  
+  .section-subtitle {
+    font-size: 1rem;
+  }
+  
+  .activities-grid {
+    grid-template-columns: 1fr;
+    gap: 1.5rem;
+  }
+  
+  .activities-stats {
+    flex-direction: column;
+    gap: 1.5rem;
+  }
+  
+  .stat-divider {
+    width: 60px;
+    height: 2px;
+  }
+  
+  .quote-text {
+    font-size: 1rem;
+  }
+  
+  .activities-quote {
+    padding: 2rem;
+  }
+  
+  .quote-icon {
+    font-size: 4rem;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .extracurriculars-container {
+    padding: 0 1rem;
+  }
+  
+  .section-title {
+    font-size: 1.6rem;
+  }
+  
+  .title-accent {
+    font-size: 1.1rem;
+  }
+  
+  .activity-card {
+    padding: 1rem;
+  }
+  
+  .card-title {
+    font-size: 1.1rem;
+  }
+  
+  .activity-tag {
+    font-size: 0.75rem;
+    padding: 0.375rem 0.75rem;
+  }
+  
+  .stat-number {
+    font-size: 2rem;
+  }
+  
+  .cta-button {
+    width: 100%;
+  }
+}
+
+/* Reduced Motion */
+@media (prefers-reduced-motion: reduce) {
+  .activity-card,
+  .activities-stats,
+  .activities-quote,
+  .activities-cta {
+    animation: none;
+    transition: none;
+    opacity: 1;
+    transform: none;
+  }
+}

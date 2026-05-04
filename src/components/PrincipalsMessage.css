@@ -1,0 +1,399 @@
+/* Principal's Message Section */
+.principals-message {
+  padding: 6rem 0;
+  background: linear-gradient(135deg, #f8f9fa 0%, #ffffff 100%);
+  position: relative;
+  overflow: hidden;
+}
+
+.message-container {
+  max-width: 1400px;
+  margin: 0 auto;
+  padding: 0 3rem;
+}
+
+.message-grid {
+  display: grid;
+  grid-template-columns: 1fr 1.2fr;
+  gap: 4rem;
+  align-items: start;
+  opacity: 0;
+  transform: translateY(30px);
+  transition: all 0.8s ease;
+}
+
+.message-grid.animate {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+/* Principal Photo Section */
+.principal-photo {
+  position: relative;
+  animation: fadeInLeft 0.8s ease;
+}
+
+@keyframes fadeInLeft {
+  from {
+    opacity: 0;
+    transform: translateX(-30px);
+  }
+  to {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+.photo-frame {
+  position: relative;
+  margin-bottom: 2rem;
+}
+
+.photo-placeholder {
+  position: relative;
+  border-radius: 20px;
+  overflow: hidden;
+  box-shadow: 0 20px 40px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease;
+}
+
+.photo-placeholder:hover {
+  transform: scale(1.02);
+}
+
+.photo-placeholder svg {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+
+.photo-overlay {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background: linear-gradient(to top, rgba(0, 0, 0, 0.8), transparent);
+  padding: 2rem 1.5rem 1.5rem;
+  color: white;
+  text-align: center;
+}
+
+.signature-icon {
+  width: 50px;
+  height: 50px;
+  background: white;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 0 auto 1rem;
+  color: #667eea;
+}
+
+.photo-overlay span {
+  display: block;
+  font-size: 1.1rem;
+  font-weight: 600;
+  margin-bottom: 0.25rem;
+}
+
+.photo-overlay p {
+  font-size: 0.85rem;
+  opacity: 0.9;
+}
+
+/* Principal Badges */
+.principal-badges {
+  display: flex;
+  gap: 1rem;
+  justify-content: center;
+}
+
+.badge-item {
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+  padding: 0.75rem 1.25rem;
+  background: white;
+  border-radius: 50px;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.05);
+  border: 1px solid rgba(102, 126, 234, 0.1);
+  transition: all 0.3s ease;
+}
+
+.badge-item:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 10px 25px rgba(102, 126, 234, 0.15);
+  border-color: rgba(102, 126, 234, 0.3);
+}
+
+.badge-icon {
+  font-size: 1.5rem;
+}
+
+.badge-text {
+  font-size: 0.85rem;
+  font-weight: 500;
+  color: #1a1a2e;
+}
+
+/* Message Content */
+.message-content {
+  animation: fadeInRight 0.8s ease;
+}
+
+@keyframes fadeInRight {
+  from {
+    opacity: 0;
+    transform: translateX(30px);
+  }
+  to {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+.message-header {
+  margin-bottom: 2rem;
+}
+
+.message-tag {
+  display: inline-block;
+  background: linear-gradient(135deg, rgba(102, 126, 234, 0.1), rgba(118, 75, 162, 0.1));
+  padding: 0.5rem 1rem;
+  border-radius: 50px;
+  font-size: 0.85rem;
+  font-weight: 600;
+  color: #667eea;
+  margin-bottom: 1rem;
+  letter-spacing: 0.5px;
+}
+
+.message-title {
+  font-size: 2.5rem;
+  font-weight: 700;
+  color: #1a1a2e;
+  margin-bottom: 1rem;
+  line-height: 1.2;
+}
+
+.title-decoration {
+  width: 60px;
+  height: 3px;
+  background: linear-gradient(90deg, #667eea, #764ba2);
+  border-radius: 3px;
+}
+
+.message-body {
+  margin-bottom: 2rem;
+}
+
+.greeting {
+  font-size: 1.2rem;
+  font-weight: 600;
+  color: #667eea;
+  margin-bottom: 1rem;
+}
+
+.message-body p {
+  color: #4a5568;
+  line-height: 1.8;
+  margin-bottom: 1rem;
+  font-size: 1rem;
+}
+
+/* Message Footer */
+.message-footer {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-end;
+  flex-wrap: wrap;
+  gap: 1.5rem;
+  margin-top: 2rem;
+  padding-top: 1rem;
+  border-top: 2px solid rgba(102, 126, 234, 0.1);
+}
+
+.signature {
+  text-align: left;
+}
+
+.signature-line {
+  width: 120px;
+  height: 2px;
+  background: linear-gradient(90deg, #667eea, #764ba2);
+  margin-bottom: 1rem;
+}
+
+.principal-name {
+  font-size: 1.1rem;
+  font-weight: 700;
+  color: #1a1a2e;
+  margin-bottom: 0.25rem;
+}
+
+.principal-title {
+  font-size: 0.85rem;
+  color: #718096;
+}
+
+.message-quote {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  color: #667eea;
+  font-size: 0.9rem;
+  font-style: italic;
+}
+
+.message-quote svg {
+  flex-shrink: 0;
+}
+
+/* Message Stats */
+.message-stats {
+  display: flex;
+  justify-content: space-between;
+  gap: 1.5rem;
+  margin-top: 2rem;
+  padding: 1.5rem;
+  background: linear-gradient(135deg, rgba(102, 126, 234, 0.05), rgba(118, 75, 162, 0.05));
+  border-radius: 16px;
+}
+
+.message-stats .stat-item {
+  text-align: center;
+  flex: 1;
+}
+
+.message-stats .stat-number {
+  font-size: 1.5rem;
+  font-weight: 800;
+  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  margin-bottom: 0.5rem;
+}
+
+.message-stats .stat-label {
+  font-size: 0.8rem;
+  color: #718096;
+}
+
+/* Responsive Design */
+@media screen and (max-width: 1024px) {
+  .message-container {
+    padding: 0 2rem;
+  }
+  
+  .message-grid {
+    gap: 3rem;
+  }
+  
+  .message-title {
+    font-size: 2rem;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .principals-message {
+    padding: 4rem 0;
+  }
+  
+  .message-container {
+    padding: 0 1.5rem;
+  }
+  
+  .message-grid {
+    grid-template-columns: 1fr;
+    gap: 2rem;
+  }
+  
+  .principal-photo {
+    max-width: 400px;
+    margin: 0 auto;
+  }
+  
+  .message-title {
+    font-size: 1.8rem;
+  }
+  
+  .greeting {
+    font-size: 1.1rem;
+  }
+  
+  .message-body p {
+    font-size: 0.95rem;
+  }
+  
+  .message-footer {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+  
+  .message-stats {
+    flex-wrap: wrap;
+  }
+  
+  .principal-badges {
+    flex-wrap: wrap;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .message-container {
+    padding: 0 1rem;
+  }
+  
+  .message-title {
+    font-size: 1.5rem;
+  }
+  
+  .greeting {
+    font-size: 1rem;
+  }
+  
+  .message-body p {
+    font-size: 0.9rem;
+    line-height: 1.7;
+  }
+  
+  .message-stats {
+    flex-direction: column;
+    gap: 1rem;
+  }
+  
+  .message-stats .stat-item {
+    text-align: left;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 1rem;
+  }
+  
+  .badge-item {
+    width: 100%;
+    justify-content: center;
+  }
+  
+  .principal-name {
+    font-size: 1rem;
+  }
+  
+  .message-quote {
+    font-size: 0.8rem;
+  }
+}
+
+/* Reduced Motion */
+@media (prefers-reduced-motion: reduce) {
+  .message-grid,
+  .principal-photo,
+  .message-content {
+    animation: none;
+    transition: none;
+    opacity: 1;
+    transform: none;
+  }
+}

@@ -1,0 +1,579 @@
+/* Academic Levels Section */
+.academic-levels {
+  padding: 6rem 0;
+  background: linear-gradient(135deg, #f8f9fa 0%, #ffffff 100%);
+  position: relative;
+  overflow: hidden;
+}
+
+.levels-container {
+  max-width: 1400px;
+  margin: 0 auto;
+  padding: 0 3rem;
+}
+
+/* Section Header */
+.section-header {
+  text-align: center;
+  margin-bottom: 3rem;
+  opacity: 0;
+  transform: translateY(30px);
+  transition: all 0.8s ease;
+}
+
+.section-header.animate {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+.section-tag {
+  display: inline-block;
+  background: linear-gradient(135deg, rgba(102, 126, 234, 0.1), rgba(118, 75, 162, 0.1));
+  padding: 0.5rem 1rem;
+  border-radius: 50px;
+  font-size: 0.85rem;
+  font-weight: 600;
+  color: #667eea;
+  margin-bottom: 1rem;
+  letter-spacing: 0.5px;
+}
+
+.section-title {
+  font-size: 2.8rem;
+  font-weight: 700;
+  color: #1a1a2e;
+  margin-bottom: 1rem;
+  line-height: 1.2;
+}
+
+.title-accent {
+  display: block;
+  font-size: 1.8rem;
+  color: #667eea;
+  margin-top: 0.5rem;
+}
+
+.section-subtitle {
+  font-size: 1.1rem;
+  color: #718096;
+  max-width: 600px;
+  margin: 0 auto;
+}
+
+/* Level Tabs */
+.level-tabs {
+  display: flex;
+  justify-content: center;
+  gap: 1rem;
+  margin-bottom: 3rem;
+  opacity: 0;
+  transform: translateY(30px);
+  transition: all 0.8s ease 0.2s;
+  flex-wrap: wrap;
+}
+
+.level-tabs.animate {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+.tab-btn {
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+  padding: 1rem 2rem;
+  background: white;
+  border: 2px solid rgba(102, 126, 234, 0.2);
+  border-radius: 60px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  font-size: 1rem;
+  font-weight: 600;
+  color: #4a5568;
+  position: relative;
+  overflow: hidden;
+}
+
+.tab-btn::before {
+  content: '';
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 0;
+  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+  transition: height 0.3s ease;
+  z-index: -1;
+}
+
+.tab-btn:hover::before {
+  height: 100%;
+}
+
+.tab-btn:hover {
+  border-color: transparent;
+  color: white;
+  transform: translateY(-3px);
+}
+
+.tab-btn.active {
+  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+  border-color: transparent;
+  color: white;
+  box-shadow: 0 10px 25px rgba(102, 126, 234, 0.3);
+}
+
+.tab-icon {
+  font-size: 1.3rem;
+}
+
+.tab-text {
+  font-weight: 600;
+}
+
+.tab-grade {
+  font-size: 0.8rem;
+  opacity: 0.8;
+  font-weight: normal;
+}
+
+/* Level Content */
+.level-content {
+  opacity: 0;
+  transform: translateY(30px);
+  transition: all 0.8s ease 0.4s;
+}
+
+.level-content.animate {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+.level-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 3rem;
+  background: white;
+  border-radius: 24px;
+  padding: 2.5rem;
+  box-shadow: 0 20px 40px rgba(0, 0, 0, 0.05);
+  border: 1px solid rgba(102, 126, 234, 0.1);
+}
+
+/* Level Info */
+.level-badge {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.75rem;
+  padding: 0.5rem 1.25rem;
+  border-radius: 50px;
+  color: white;
+  margin-bottom: 1.5rem;
+}
+
+.level-icon {
+  font-size: 1.3rem;
+}
+
+.level-name {
+  font-weight: 600;
+  font-size: 1rem;
+}
+
+.level-meta {
+  display: flex;
+  gap: 1.5rem;
+  margin-bottom: 1.5rem;
+}
+
+.meta-item {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  color: #4a5568;
+  font-size: 0.9rem;
+}
+
+.meta-item svg {
+  color: #667eea;
+}
+
+.level-description {
+  color: #4a5568;
+  line-height: 1.7;
+  margin-bottom: 2rem;
+  font-size: 1rem;
+}
+
+.level-features h4 {
+  font-size: 1.1rem;
+  font-weight: 600;
+  color: #1a1a2e;
+  margin-bottom: 1rem;
+}
+
+.level-features ul {
+  list-style: none;
+  padding: 0;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 0.75rem;
+  margin-bottom: 2rem;
+}
+
+.level-features li {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  font-size: 0.9rem;
+  color: #4a5568;
+}
+
+.level-features li svg {
+  color: #667eea;
+  flex-shrink: 0;
+}
+
+.level-cta {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.75rem;
+  padding: 0.875rem 2rem;
+  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+  color: white;
+  text-decoration: none;
+  border-radius: 50px;
+  font-weight: 600;
+  transition: all 0.3s ease;
+}
+
+.level-cta:hover {
+  transform: translateX(5px);
+  box-shadow: 0 8px 20px rgba(102, 126, 234, 0.3);
+}
+
+/* Curriculum Section */
+.level-curriculum {
+  background: #f8f9fa;
+  border-radius: 20px;
+  padding: 1.5rem;
+}
+
+.curriculum-header {
+  margin-bottom: 1.5rem;
+}
+
+.curriculum-header h3 {
+  font-size: 1.3rem;
+  font-weight: 600;
+  color: #1a1a2e;
+  margin-bottom: 0.5rem;
+}
+
+.curriculum-header p {
+  color: #718096;
+  font-size: 0.9rem;
+}
+
+.subjects-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 1rem;
+  margin-bottom: 1.5rem;
+}
+
+.subject-card {
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+  padding: 0.75rem;
+  background: white;
+  border-radius: 12px;
+  transition: all 0.3s ease;
+  border: 1px solid rgba(102, 126, 234, 0.1);
+}
+
+.subject-card:hover {
+  transform: translateX(5px);
+  border-color: rgba(102, 126, 234, 0.3);
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.05);
+}
+
+.subject-dot {
+  width: 8px;
+  height: 8px;
+  border-radius: 50%;
+  background: #667eea;
+}
+
+.subject-card span {
+  font-size: 0.9rem;
+  color: #4a5568;
+}
+
+.curriculum-footer {
+  display: flex;
+  gap: 1rem;
+  margin-top: 1.5rem;
+  padding-top: 1.5rem;
+  border-top: 1px solid rgba(102, 126, 234, 0.1);
+  flex-wrap: wrap;
+}
+
+.footer-badge {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  padding: 0.5rem 1rem;
+  background: white;
+  border-radius: 50px;
+  font-size: 0.8rem;
+  color: #667eea;
+  font-weight: 500;
+}
+
+/* Comparison Cards */
+.comparison-cards {
+  margin-top: 4rem;
+  opacity: 0;
+  transform: translateY(30px);
+  transition: all 0.8s ease 0.6s;
+}
+
+.comparison-cards.animate {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+.comparison-title {
+  text-align: center;
+  font-size: 1.5rem;
+  font-weight: 600;
+  color: #1a1a2e;
+  margin-bottom: 2rem;
+}
+
+.cards-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 1.5rem;
+}
+
+.comp-card {
+  background: white;
+  padding: 1.5rem;
+  border-radius: 20px;
+  text-align: center;
+  transition: all 0.3s ease;
+  border: 1px solid rgba(102, 126, 234, 0.1);
+}
+
+.comp-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 15px 30px rgba(0, 0, 0, 0.1);
+  border-color: rgba(102, 126, 234, 0.3);
+}
+
+.comp-icon {
+  font-size: 2.5rem;
+  margin-bottom: 1rem;
+}
+
+.comp-card h4 {
+  font-size: 1.1rem;
+  font-weight: 600;
+  color: #1a1a2e;
+  margin-bottom: 0.5rem;
+}
+
+.comp-age {
+  font-size: 0.85rem;
+  color: #667eea;
+  font-weight: 500;
+  margin-bottom: 0.5rem;
+}
+
+.comp-focus {
+  font-size: 0.8rem;
+  color: #718096;
+  margin-bottom: 0.5rem;
+}
+
+.comp-duration {
+  font-size: 0.8rem;
+  color: #4a5568;
+  font-weight: 500;
+}
+
+/* Responsive Design */
+@media screen and (max-width: 1200px) {
+  .levels-container {
+    padding: 0 2rem;
+  }
+  
+  .level-grid {
+    gap: 2rem;
+    padding: 2rem;
+  }
+}
+
+@media screen and (max-width: 992px) {
+  .section-title {
+    font-size: 2.5rem;
+  }
+  
+  .title-accent {
+    font-size: 1.6rem;
+  }
+  
+  .level-features ul {
+    grid-template-columns: 1fr;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .academic-levels {
+    padding: 4rem 0;
+  }
+  
+  .levels-container {
+    padding: 0 1.5rem;
+  }
+  
+  .section-title {
+    font-size: 2rem;
+  }
+  
+  .title-accent {
+    font-size: 1.3rem;
+  }
+  
+  .level-tabs {
+    gap: 0.75rem;
+  }
+  
+  .tab-btn {
+    padding: 0.75rem 1.25rem;
+    flex-direction: column;
+    gap: 0.25rem;
+  }
+  
+  .tab-text {
+    font-size: 0.9rem;
+  }
+  
+  .tab-grade {
+    font-size: 0.7rem;
+  }
+  
+  .level-grid {
+    grid-template-columns: 1fr;
+    gap: 1.5rem;
+    padding: 1.5rem;
+  }
+  
+  .level-meta {
+    flex-wrap: wrap;
+  }
+  
+  .subjects-grid {
+    grid-template-columns: 1fr;
+  }
+  
+  .cards-grid {
+    grid-template-columns: 1fr;
+    gap: 1rem;
+  }
+  
+  .comp-card {
+    padding: 1.25rem;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .levels-container {
+    padding: 0 1rem;
+  }
+  
+  .section-title {
+    font-size: 1.6rem;
+  }
+  
+  .title-accent {
+    font-size: 1.1rem;
+  }
+  
+  .section-subtitle {
+    font-size: 0.9rem;
+  }
+  
+  .level-tabs {
+    flex-direction: column;
+    gap: 0.5rem;
+  }
+  
+  .tab-btn {
+    flex-direction: row;
+    justify-content: center;
+  }
+  
+  .level-grid {
+    padding: 1rem;
+  }
+  
+  .level-badge {
+    width: 100%;
+    justify-content: center;
+  }
+  
+  .level-features li {
+    font-size: 0.85rem;
+  }
+  
+  .level-cta {
+    width: 100%;
+    justify-content: center;
+  }
+  
+  .curriculum-footer {
+    flex-direction: column;
+  }
+  
+  .footer-badge {
+    justify-content: center;
+  }
+}
+
+@media screen and (max-width: 380px) {
+  .tab-btn {
+    flex-direction: column;
+  }
+}
+
+/* Animations */
+@keyframes fadeSlideUp {
+  from {
+    opacity: 0;
+    transform: translateY(30px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* Reduced Motion */
+@media (prefers-reduced-motion: reduce) {
+  .section-header,
+  .level-tabs,
+  .level-content,
+  .comparison-cards,
+  .tab-btn,
+  .subject-card,
+  .comp-card {
+    animation: none;
+    transition: none;
+    opacity: 1;
+    transform: none;
+  }
+}
