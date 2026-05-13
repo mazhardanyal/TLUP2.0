@@ -7,7 +7,7 @@ const Hero = () => {
 
   useEffect(() => {
     const handleMouseMove = (e) => {
-      if (!heroRef.current) return;
+      if (!heroRef.current || window.innerWidth < 1024) return;
       const { clientX, clientY } = e;
       const { width, height, left, top } = heroRef.current.getBoundingClientRect();
       const x = (clientX - left) / width;
@@ -30,112 +30,111 @@ const Hero = () => {
   }, []);
 
   return (
-    <section className="hero" ref={heroRef}>
-      {/* Animated Background Elements */}
-      <div className="hero-bg">
-        <div className="gradient-orb orb-1"></div>
-        <div className="gradient-orb orb-2"></div>
-        <div className="gradient-orb orb-3"></div>
+    <section className="hero-modern" ref={heroRef}>
+      {/* Animated Background */}
+      <div className="hero-bg-modern">
+        <div className="gradient-blob blob-1"></div>
+        <div className="gradient-blob blob-2"></div>
+        <div className="gradient-blob blob-3"></div>
+        <div className="gradient-blob blob-4"></div>
       </div>
 
-      {/* Grid Pattern Overlay */}
-      <div className="grid-overlay"></div>
+      {/* Noise Texture */}
+      <div className="noise-overlay"></div>
 
-      <div className="hero-container">
-        <div className="hero-content">
-          {/* Badge */}
-         
+      <div className="hero-container-modern">
+        <div className="hero-content-modern">
+          {/* Animated Badge */}
+          <div className="hero-badge-modern">
+            <span className="badge-pulse"></span>
+            <span>🌟 Since 2020</span>
+            <span className="badge-accent">| Excellence Since '20</span>
+          </div>
+
           {/* Main Heading */}
-          <h1 className="hero-title">
-            <span className="title-line">Nurturing Minds. Building Futures</span>
-            <span className="title-gradient">Inspiring Excellence</span>
+          <h1 className="hero-title-modern">
+            <span className="title-outline">Shape Your</span>
+            <span className="title-main">Future</span>
+            <span className="title-gradient-modern">Today</span>
           </h1>
 
           {/* Description */}
-          <p className="hero-description">
-            Empowering the next generation of leaders, innovators, and changemakers. 
-            Join a community where academic excellence meets character development.
+          <p className="hero-description-modern">
+            Where young minds discover their potential and dreams take flight. 
+            Join a community that celebrates curiosity, creativity, and character.
           </p>
 
           {/* CTA Buttons */}
-          <div className="hero-buttons">
-            <Link to="/admissions" className="btn-primary">
-              <span>Start Your Journey</span>
-              <svg className="btn-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2">
-                <line x1="5" y1="12" x2="19" y2="12"></line>
-                <polyline points="12 5 19 12 12 19"></polyline> 
+          <div className="hero-buttons-modern">
+            <Link to="/Contactus" className="btn-primary-modern">
+              <span>Begin Your Journey</span>
+              <svg className="btn-icon-modern" viewBox="0 0 24 24" fill="none">
+                <path d="M5 12h14M12 5l7 7-7 7" stroke="currentColor" strokeWidth="2" strokeLinecap="round"/>
               </svg>
             </Link>
-            <Link to="/about" className="btn-secondary">
-              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2">
-                <circle cx="12" cy="12" r="10"></circle>
-                <polygon points="10 8 16 12 10 16 10 8"></polygon>
-              </svg>
+            <Link to="/Gallery" className="btn-secondary-modern">
+             
               <span>Virtual Tour</span>
             </Link>
           </div>
 
-          {/* Stats Section */}
-          <div className="hero-stats">
-            <div className="stat-item">
-              <div className="stat-number">
-                <span className="counter" data-target="25">5</span>
-                <span>+</span>
+          {/* Trust Indicators */}
+          <div className="trust-indicators">
+            <div className="trust-item">
+              <div className="trust-number">
+                <span>25+</span>
+                <span className="trust-plus">Years</span>
               </div>
-              <div className="stat-label">Years of Excellence</div>
+              <div className="trust-label">of Excellence</div>
             </div>
-            <div className="stat-divider"></div>
-            <div className="stat-item">
-              <div className="stat-number">
-                <span className="counter" data-target="2000">5  00</span>
-                <span>+</span>
+            <div className="trust-divider"></div>
+            <div className="trust-item">
+              <div className="trust-number">
+                <span>2000+</span>
               </div>
-              <div className="stat-label">Happy Students</div>
+              <div className="trust-label">Happy Students</div>
             </div>
-            <div className="stat-divider"></div>
-            <div className="stat-item">
-              <div className="stat-number">
-                <span className="counter" data-target="98">98</span>
-                <span>%</span>
+            <div className="trust-divider"></div>
+            <div className="trust-item">
+              <div className="trust-number">
+                <span>98%</span>
               </div>
-              <div className="stat-label">Graduation Rate</div>
+              <div className="trust-label">Success Rate</div>
             </div>
           </div>
         </div>
 
-        {/* Hero Image/Illustration */}
-        <div className="hero-visual">
-          <div className="floating-card card-1">
-            <div className="card-icon">🏆</div>
-            <div className="card-text">Top Ranked</div>
+        {/* Hero Visual */}
+        <div className="hero-visual-modern">
+          <div className="floating-badge badge-1">
+            <span>🏆</span>
+            <span>Qualified Teachers</span>
           </div>
-          <div className="floating-card card-2">
-            <div className="card-icon">👩‍🎓</div>
-            <div className="card-text">Expert Faculty</div>
-          </div>
-          <div className="floating-card card-3">
-            <div className="card-icon">🌍</div>
-            <div className="card-text">Global Alumni</div>
+          <div className="floating-badge badge-2">
+            <span>👩‍🏫</span>
+            <span>Expert Faculty</span>
           </div>
           
-          <div className="hero-image-wrapper">
-            <div className="image-glow"></div>
-            <div className="hero-image">
-              <svg viewBox="0 0 600 500" fill="none" xmlns="http://www.w3.org/2000/svg">
-                <rect x="150" y="180" width="300" height="200" rx="20" fill="url(#grad1)" opacity="0.3"/>
-                <circle cx="300" cy="280" r="80" fill="url(#grad2)" opacity="0.6"/>
-                <path d="M200 300 L250 250 L300 280 L350 230 L400 300" stroke="url(#grad1)" strokeWidth="4" strokeLinecap="round" fill="none"/>
-                <circle cx="250" cy="240" r="10" fill="#667eea"/>
-                <circle cx="350" cy="220" r="10" fill="#764ba2"/>
-                <rect x="270" y="300" width="60" height="80" rx="5" fill="url(#grad2)" opacity="0.8"/>
+          
+          <div className="hero-image-modern">
+            <div className="image-ring"></div>
+            <div className="image-glow-modern"></div>
+            <div className="hero-illustration">
+              <svg viewBox="0 0 500 450" fill="none">
+                <circle cx="250" cy="225" r="120" fill="url(#gradient1)" opacity="0.4"/>
+                <path d="M150 300 L200 200 L250 250 L300 180 L350 280" stroke="url(#gradient2)" strokeWidth="5" strokeLinecap="round" fill="none"/>
+                <circle cx="200" cy="220" r="12" fill="#667eea"/>
+                <circle cx="300" cy="210" r="12" fill="#764ba2"/>
+                <rect x="220" y="280" width="60" height="70" rx="10" fill="url(#gradient1)" opacity="0.8"/>
+                <path d="M250 200 L250 250 M220 230 L280 230" stroke="white" strokeWidth="3" strokeLinecap="round"/>
                 <defs>
-                  <linearGradient id="grad1" x1="0" y1="0" x2="1" y2="1">
-                    <stop offset="0%" stopColor="#667eea"/>
-                    <stop offset="100%" stopColor="#764ba2"/>
+                  <linearGradient id="gradient1" x1="0" y1="0" x2="1" y2="1">
+                    <stop stopColor="#667eea"/>
+                    <stop stopColor="#764ba2"/>
                   </linearGradient>
-                  <linearGradient id="grad2" x1="0" y1="0" x2="0" y2="1">
-                    <stop offset="0%" stopColor="#667eea" stopOpacity="0.8"/>
-                    <stop offset="100%" stopColor="#764ba2" stopOpacity="0.8"/>
+                  <linearGradient id="gradient2" x1="0" y1="0" x2="1" y2="1">
+                    <stop stopColor="#667eea"/>
+                    <stop stopColor="#f093fb"/>
                   </linearGradient>
                 </defs>
               </svg>
@@ -144,12 +143,10 @@ const Hero = () => {
         </div>
       </div>
 
-      {/* Scroll Indicator */}
-      <div className="scroll-indicator">
-        <div className="mouse">
-          <div className="wheel"></div>
-        </div>
-        <div className="scroll-text">Scroll to explore</div>
+      {/* Scroll Down Indicator */}
+      <div className="scroll-down">
+        <div className="scroll-wheel"></div>
+        <span>Scroll</span>
       </div>
     </section>
   );

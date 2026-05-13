@@ -143,10 +143,7 @@ const Extracurriculars = () => {
             <div className="stat-label">Student Participation</div>
           </div>
           <div className="stat-divider"></div>
-          <div className="stat-item">
-            <div className="stat-number">15+</div>
-            <div className="stat-label">Competition Wins</div>
-          </div>
+          
         </div>
 
         {/* Quote Section */}
@@ -155,14 +152,11 @@ const Extracurriculars = () => {
           <p className="quote-text">
             The arts, sports, and clubs at Level Up School helped me discover my true potential and build lifelong friendships.
           </p>
-          <p className="quote-author">- Sarah Johnson, Alumni (Class of 2023)</p>
+          <p className="quote-author">- Kamran Khan (Class of 2023)</p>
         </div>
 
         {/* CTA Section */}
-        <div className={`activities-cta ${isVisible ? 'animate' : ''}`}>
-          <p>Have a unique passion? We support student-led initiatives!</p>
-          <button className="cta-button">Propose a New Club →</button>
-        </div>
+      
       </div>
     </section>
   );

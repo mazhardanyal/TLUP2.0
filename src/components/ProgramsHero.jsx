@@ -20,8 +20,8 @@ const ProgramsHero = () => {
             designed to nurture, challenge, and inspire every student.
           </p>
           <div className="hero-buttons">
-            <Link to="/admissions" className="btn-primary">Apply Now</Link>
-            <Link to="/contact" className="btn-secondary">Schedule a Tour</Link>
+            <Link to="/Contactus" className="btn-primary">Apply Now</Link>
+            <Link to="/Gallery" className="btn-secondary">Schedule a Tour</Link>
           </div>
         </div>
         <div className="hero-stats">

@@ -27,58 +27,55 @@ const Testimonials = () => {
   const testimonials = [
     {
       id: 1,
-      name: "Sarah Johnson",
-      childName: "Emily Johnson - Grade 5",
+      name: "Malik Zafar",
+  
       rating: 5,
       review: "The Level Up School has been transformative for my daughter. The teachers genuinely care about each student's success, and the holistic approach to education has helped Emily excel both academically and personally. We couldn't be happier with our choice!",
       date: "March 2024",
-      avatar: "SJ",
-      image: "https://randomuser.me/api/portraits/women/1.jpg",
-      location: "New York, NY"
+      avatar: "MZ",
+      
+     
     },
     {
       id: 2,
-      name: "Michael Chen",
-      childName: "Alexander Chen - Grade 7",
+      name: "Waqar Khan",
+      
       rating: 5,
       review: "The STEM program at The Level Up School is outstanding. My son has developed a genuine passion for science and technology. The facilities are state-of-the-art, and the extracurricular activities are diverse and engaging.",
       date: "February 2024",
-      avatar: "MC",
-      image: "https://randomuser.me/api/portraits/men/2.jpg",
-      location: "Boston, MA"
+      avatar: "Wk",
+    
+      
     },
     {
       id: 3,
-      name: "David Williams",
-      childName: "Sophia Williams - Grade 3",
+      name: "Muhammad Kamran",
+      
       rating: 5,
       review: "The caring environment and dedicated teachers have made all the difference. Our daughter looks forward to school every day and has grown so much in confidence. The parent-teacher communication is exceptional!",
       date: "January 2024",
-      avatar: "DW",
-      image: "https://randomuser.me/api/portraits/men/3.jpg",
-      location: "Chicago, IL"
+      avatar: "MK",
+     
     },
     {
       id: 4,
-      name: "Jessica Martinez",
-      childName: "Isabella Martinez - Grade 2",
+      name: "Farhan Shah",
+    
       rating: 5,
       review: "We moved our daughter to The Level Up School last year, and it's been the best decision. The focus on character development alongside academics is exactly what we wanted. She's thriving in this environment.",
       date: "December 2023",
-      avatar: "JM",
-      image: "https://randomuser.me/api/portraits/women/4.jpg",
-      location: "Miami, FL"
+      avatar: "FS",
+      
     },
     {
       id: 5,
-      name: "Robert Taylor",
-      childName: "James Taylor - Grade 8",
+      name: "Rauf Khan",
+     
       rating: 5,
       review: "The sports program and leadership opportunities at The Level Up School are phenomenal. My son has not only improved academically but has also developed crucial life skills. Highly recommended!",
       date: "November 2023",
-      avatar: "RT",
-      image: "https://randomuser.me/api/portraits/men/5.jpg",
-      location: "Austin, TX"
+      avatar: "RK",
+    
     }
   ];
 
@@ -129,7 +126,7 @@ const Testimonials = () => {
               <span>★★★★★</span>
               <span className="rating-outof">/ 5.0</span>
             </div>
-            <div className="rating-count">Based on 500+ parent reviews</div>
+            <div className="rating-count">Based on 150+ parent reviews</div>
           </div>
           <div className="rating-badges">
             <div className="badge">
@@ -229,12 +226,12 @@ const Testimonials = () => {
           </div>
           <div className="stat-divider"></div>
           <div className="stat-item">
-            <div className="stat-number">500+</div>
+            <div className="stat-number">150+</div>
             <div className="stat-label">Happy Families</div>
           </div>
           <div className="stat-divider"></div>
           <div className="stat-item">
-            <div className="stat-number">15+</div>
+            <div className="stat-number">5+</div>
             <div className="stat-label">Years of Trust</div>
           </div>
         </div>

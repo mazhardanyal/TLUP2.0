@@ -1,6 +1,8 @@
 import React from 'react'
 import PrincipalsMessage from '../components/PrincipalsMessage'
 import '../components/PrincipalsMessage.css'
+import Ownermessage from '../components/Ownermessage'
+import '../components/Ownermessage.css'
 import '../components/AboutUS.css'
 import AboutUS from '../components/AboutUS';
 import Teachers from '../components/Teachers';
@@ -9,7 +11,7 @@ const About = () => {
   return (
     <div>
 <PrincipalsMessage />
-<PrincipalsMessage />
+<Ownermessage />
 <AboutUS />
 <Teachers />
     </div>

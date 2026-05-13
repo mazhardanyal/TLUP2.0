@@ -1,6 +1,7 @@
 import React, { useEffect, useRef, useState } from 'react';
-import './PrincipalsMessage.css';
-import pricipal from '../assets/pricipal.jpeg';
+import './Ownermessage.css';
+import Owner from '../assets/Owner.jpeg';
+
 const PrincipalsMessage = () => {
   const [isVisible, setIsVisible] = useState(false);
   const sectionRef = useRef(null);
@@ -27,55 +28,10 @@ const PrincipalsMessage = () => {
     <section className="principals-message" ref={sectionRef}>
       <div className="message-container">
         <div className={`message-grid ${isVisible ? 'animate' : ''}`}>
-          {/* Left Column - Principal's Photo */}
-          {/* Left Column - Principal's Photo */}
-<div className="principal-photo">
-
-  <div className="photo-frame">
-
-    <div className="photo-placeholder">
-
-      <img
-        src={pricipal}
-        alt="Principal"
-        className="school-main-img"
-      />
-
-      <div className="photo-overlay">
-        <div className="signature-icon">
-          <svg xmlns="http://www.w3.org/2000/svg" fill="none" stroke="currentColor" strokeWidth="1.5">
-            <path d="M3 16l5-5 5 5 5-5 5 5" strokeLinecap="round"/>
-            <path d="M3 12v-3" strokeLinecap="round"/>
-            <path d="M18 9v3" strokeLinecap="round"/>
-          </svg>
-        </div>
-
-        <span>Mr. Fidda Durrai</span>
-        <p>Principal, The Level Up</p>
-      </div>
-
-    </div>
-
-  </div>
-
-  {/* Social/Achievement Badges */}
-  <div className="principal-badges">
-    <div className="badge-item">
-      <div className="badge-icon">🏆</div>
-      <div className="badge-text">12+ Years Experience</div>
-    </div>
-
-    <div className="badge-item">
-      <div className="badge-icon">📜</div>
-      <div className="badge-text">PhD in Education</div>
-    </div>
-  </div>
-
-</div>
-          {/* Right Column - Message Content */}
+          {/* Left Column - Message Content (NOW ON LEFT) */}
           <div className="message-content">
             <div className="message-header">
-              <span className="message-tag">A Message From Our Principal</span>
+              <span className="message-tag">A Message From Our Owner</span>
               <h2 className="message-title">Welcome to The Level Up</h2>
               <div className="title-decoration"></div>
             </div>
@@ -85,7 +41,7 @@ const PrincipalsMessage = () => {
               
               <p>
                 It is with great pride and enthusiasm that I welcome you to The Level Up School. 
-                For over 25 years, we have been committed to creating an environment where 
+                For over 5 years, we have been committed to creating an environment where 
                 academic excellence meets character development, and where every child is 
                 empowered to reach their full potential.
               </p>
@@ -115,8 +71,8 @@ const PrincipalsMessage = () => {
               <div className="message-footer">
                 <div className="signature">
                   <div className="signature-line"></div>
-                  <p className="principal-name">Mr.Fidda Durrani</p>
-                  <p className="principal-title">Principal</p>
+                  <p className="principal-name">Mr. Saddam Hussain</p>
+                  <p className="principal-title">Owner</p>
                 </div>
                 
                 <div className="message-quote">
@@ -132,14 +88,49 @@ const PrincipalsMessage = () => {
             {/* Stats Highlight */}
             <div className="message-stats">
               <div className="stat-item">
-                <div className="stat-number">12+</div>
+                <div className="stat-number">5+</div>
                 <div className="stat-label">Years of Excellence</div>
               </div>
               <div className="stat-item">
                 <div className="stat-number">100%</div>
                 <div className="stat-label">Parent Satisfaction</div>
               </div>
-             
+            </div>
+          </div>
+
+          {/* Right Column - Principal's Photo (NOW ON RIGHT) */}
+          <div className="principal-photo">
+            <div className="photo-frame">
+              <div className="photo-placeholder">
+                <img
+                  src={Owner}
+                  alt="Owner"
+                  className="school-main-img"
+                />
+                <div className="photo-overlay">
+                  <div className="signature-icon">
+                    <svg xmlns="http://www.w3.org/2000/svg" fill="none" stroke="currentColor" strokeWidth="1.5">
+                      <path d="M3 16l5-5 5 5 5-5 5 5" strokeLinecap="round"/>
+                      <path d="M3 12v-3" strokeLinecap="round"/>
+                      <path d="M18 9v3" strokeLinecap="round"/>
+                    </svg>
+                  </div>
+                  <span>Mr. Saddam Hussain</span>
+                  <p>Owner, The Level Up</p>
+                </div>
+              </div>
+            </div>
+
+            {/* Social/Achievement Badges */}
+            <div className="principal-badges">
+              <div className="badge-item">
+                <div className="badge-icon">🏆</div>
+                <div className="badge-text">5+ Years Experience</div>
+              </div>
+              <div className="badge-item">
+                <div className="badge-icon">📜</div>
+                <div className="badge-text">Master In Computer Science</div>
+              </div>
             </div>
           </div>
         </div>
