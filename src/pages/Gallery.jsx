@@ -87,7 +87,7 @@ const Gallery = () => {
       thumbnail: class1,  // Use an image as thumbnail
     },
     {
-      id: 10,
+      id: 11,
       type: 'video',
       title: 'School Tour Video',
       description: 'Take a virtual tour of our campus',
