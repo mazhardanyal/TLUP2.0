@@ -1,4 +1,4 @@
-import React from 'react'
+
 import AcademicLevels from '../components/AcademicLevels'
 import ProgramsHero from '../components/ProgramsHero'
 import '../components/AcademicLevels.css'

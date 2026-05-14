@@ -1,4 +1,4 @@
-import React, { useEffect, useRef, useState } from 'react';
+import  { useEffect, useRef, useState } from 'react';
 import './PrincipalsMessage.css';
 import pricipal from '../assets/pricipal.jpeg';
 const PrincipalsMessage = () => {

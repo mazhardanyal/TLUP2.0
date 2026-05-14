@@ -1,4 +1,4 @@
-import React from 'react'
+
 import PrincipalsMessage from '../components/PrincipalsMessage'
 import '../components/PrincipalsMessage.css'
 import Ownermessage from '../components/Ownermessage'

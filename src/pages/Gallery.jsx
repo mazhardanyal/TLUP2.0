@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from 'react';
+import  { useState, useEffect } from 'react';
 import '../components/gallery.css';
 
 import class9 from '../assets/class9.jpeg';

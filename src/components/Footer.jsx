@@ -1,4 +1,4 @@
-import React from 'react';
+
 import { Link } from 'react-router-dom';
 import './Footer.css';
 import logo from '../assets/logo.jpeg';
@@ -15,7 +15,7 @@ const Footer = () => {
             <div className="footer-logo">
               <img src={logo} alt="The Level Up School Logo" className="footer-logo-image" />
               <div className="logo-text">
-                <span className="logo-academy">The Level Up</span>
+                <span className="logo-academy">The    Level Up</span>
                 <span className="logo-school">School</span>
               </div>
             </div>
