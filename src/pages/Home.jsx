@@ -1,4 +1,4 @@
-
+import React from 'react'
 import Hero from '../components/Hero';
 import '../components/Hero.css';
 import About from '../components/AboutUS';

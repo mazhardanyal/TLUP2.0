@@ -1,4 +1,4 @@
-
+import React from 'react'
 import '../components/Contact.css'
 import Contact from '../components/Contact'
 import GoogleMap from '../components/GoogleMap'

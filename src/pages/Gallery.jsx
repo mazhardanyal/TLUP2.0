@@ -1,15 +1,16 @@
+import React from 'react'
 import  { useState, useEffect } from 'react';
 import '../components/gallery.css';
 
-import class9 from '../assets/class9.jpeg';
-import class1 from '../assets/class1.jpeg';
-import class2 from '../assets/class2.jpeg';
-import class3 from '../assets/class3.jpeg';
-import class4 from '../assets/class4.jpeg';
-import class5 from '../assets/class5.jpeg';
-import class6 from '../assets/class6.jpeg';
-import Video from '../assets/video.mp4';
-import Video2 from '../assets/Video2.mp4';
+import class9 from '../assets/class9.JPEG';
+import class1 from '../assets/Class1.JPEG';
+import class2 from '../assets/Class2.JPEG';
+import class3 from '../assets/Class3.JPEG';
+import class4 from '../assets/Class4.JPEG';
+import class5 from '../assets/Class5.JPEG';
+import class6 from '../assets/Class6.JPEG';
+import Video from '../assets/Video.MP4';
+import Video2 from '../assets/Video2.MP4';
 
 const Gallery = () => {
   const [selectedMedia, setSelectedMedia] = useState(null);

@@ -1,6 +1,7 @@
+import React from 'react'
 import  { useEffect, useRef, useState } from 'react';
 import './PrincipalsMessage.css';
-import pricipal from '../assets/pricipal.jpeg';
+import pricipal from '../assets/Pricipal.JPEG';
 const PrincipalsMessage = () => {
   const [isVisible, setIsVisible] = useState(false);
   const sectionRef = useRef(null);

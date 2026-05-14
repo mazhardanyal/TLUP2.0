@@ -1,7 +1,7 @@
-
+import React from 'react'
 import { Link } from 'react-router-dom';
 import './Footer.css';
-import logo from '../assets/logo.jpeg';
+import logo from '../assets/logo.JPEG';
 
 const Footer = () => {
   const currentYear = new Date().getFullYear();
