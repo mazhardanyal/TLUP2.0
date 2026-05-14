@@ -1,16 +1,16 @@
 import React from 'react'
 import  { useState, useEffect } from 'react';
-import '../components/gallery.css';
+import '../components/Gallery.css';
 
-// import class9 from '../assets/class9.jpeg';
-// import class1 from '../assets/class1.jpeg';
-// import class2 from '../assets/class2.jpeg';
-// import class3 from '../assets/class3.jpeg';
-// import class4 from '../assets/class4.jpeg';
-// import class5 from '../assets/class5.jpeg';
-// import class6 from '../assets/class6.jpeg';
-// import video from '../assets/video.mp4';
-// import video2 from '../assets/video2.mp4';
+import class9 from '../assets/cl.jpeg';
+import class1 from '../assets/clas.jpeg';
+import class2 from '../assets/class.jpeg';
+import class3 from '../assets/classe.jpeg';
+import class4 from '../assets/cla.jpeg';
+import class5 from '../assets/class.jpeg';
+import class6 from '../assets/clased.jpeg';
+import video from '../assets/video.mp4';
+import video2 from '../assets/video2.mp4';
 
 const Gallery = () => {
   const [selectedMedia, setSelectedMedia] = useState(null);
@@ -27,56 +27,56 @@ const Gallery = () => {
       type: 'image',
       title: 'Campus View',
       description: 'Beautiful view of our school campus',
-      // url: class9,
+      url: class9,
     },
     {
       id: 2,
       type: 'image',
       title: 'Science Lab',
       description: 'Students in chemistry lab',
-      // url: class1,
+      url: class1,
     },
     {
       id: 3,
       type: 'image',
       title: 'Sports Day',
       description: 'Students participating in sports',
-      // url: class2,
+      url: class2,
     },
     {
       id: 4,
       type: 'image',
       title: 'Annual Day Performance',
       description: 'Cultural program',
-      // url: class3,
+      url: class3,
     },
     {
       id: 5,
       type: 'image',
       title: 'Graduation Ceremony',
       description: 'Students receiving degrees',
-      // url: class4,
+      url: class4,
     },
     {
       id: 6,
       type: 'image',
       title: 'Library',
       description: 'Students reading in library',
-      // url: class5,
+      url: class5,
     },
     {
       id: 7,
       type: 'image',
       title: 'Robotics Class',
       description: 'Students building robots',
-      // url: class6,
+      url: class6,
     },
     {
       id: 8,
       type: 'image',
       title: 'Computer Lab',
       description: 'Students learning coding',
-      // url: class6,
+      url: class6,
     },
     
     {
@@ -84,16 +84,16 @@ const Gallery = () => {
       type: 'video',
       title: 'School Tour Video',
       description: 'Take a virtual tour of our campus',
-      // videoUrl: video,  // Local video file
-      // thumbnail: class9,  // Use an image as thumbnail
+      videoUrl: video,  // Local video file
+      thumbnail: class9,  // Use an image as thumbnail
     },
     {
       id: 11,
       type: 'video',
       title: 'School Tour Video',
       description: 'Take a virtual tour of our campus',
-      // videoUrl: video2,  // Local video file
-      // thumbnail: class4,  // Use an image as thumbnail
+      videoUrl: video2,  // Local video file
+      thumbnail: class4,  // Use an image as thumbnail
     },
   ];
 
