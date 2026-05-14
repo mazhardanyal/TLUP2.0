@@ -380,3 +380,103 @@
     animation: none;
   }
 }
+
+/* Footer Logo Section - FIXED */
+.footer-logo {
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+  margin-bottom: 1.25rem;
+}
+
+.logo-mark {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+}
+
+.footer-logo-image {
+  width: 50px;
+  height: 50px;
+  object-fit: cover;
+  border-radius: 12px;
+  display: block;
+}
+
+.logo-text {
+  display: flex;
+  flex-direction: column;
+  line-height: 1.2;
+}
+
+.logo-academy {
+  font-size: 1.2rem;
+  font-weight: 700;
+  background: linear-gradient(135deg, #ffffff 0%, #a0aec0 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  margin: 0;
+  padding: 0;
+}
+
+.logo-school {
+  font-size: 0.7rem;
+  font-weight: 500;
+  letter-spacing: 0.1em;
+  color: #667eea;
+  text-transform: uppercase;
+  margin-top: 2px;
+}
+
+/* Responsive adjustments */
+@media screen and (max-width: 768px) {
+  .footer-logo-image {
+    width: 45px;
+    height: 45px;
+  }
+  
+  .logo-academy {
+    font-size: 1.1rem;
+  }
+  
+  .logo-school {
+    font-size: 0.65rem;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .footer-logo {
+    justify-content: center;
+  }
+  
+  .footer-logo-image {
+    width: 40px;
+    height: 40px;
+  }
+  
+  .logo-academy {
+    font-size: 1rem;
+  }
+  
+  .logo-school {
+    font-size: 0.6rem;
+  }
+  
+  .logo-text {
+    align-items: flex-start;
+  }
+}
+
+/* Fix for very small devices */
+@media screen and (max-width: 380px) {
+  .footer-logo {
+    flex-direction: column;
+    text-align: center;
+  }
+  
+  .logo-text {
+    align-items: center;
+  }
+}

@@ -239,7 +239,7 @@ const Testimonials = () => {
         {/* CTA Section */}
         <div className={`testimonials-cta ${isVisible ? 'animate' : ''}`}>
           <p>Ready to join our family?</p>
-          <button className="cta-button">Schedule a Tour Today →</button>
+          
         </div>
       </div>
     </section>

@@ -1,5 +1,5 @@
 import React, { useEffect, useRef, useState } from 'react';
-
+import './Teachers.css';
 
 const Teachers = () => {
   const [isVisible, setIsVisible] = useState(false);
@@ -27,89 +27,76 @@ const Teachers = () => {
   const teachers = [
     {
       id: 1,
-      name: "Dr. Sarah Mitchell",
-      subject: "Mathematics & STEM Coordinator",
-      qualification: "Ph.D. in Mathematics",
-      experience: "15+ years",
-      bio: "Dr. Mitchell brings innovative teaching methods and a passion for making math exciting. She has published multiple research papers in math education.",
-      image: "https://randomuser.me/api/portraits/women/10.jpg",
-      social: {
-        linkedin: "#",
-        email: "s.mitchell@eliteacademy.edu"
-      },
-      achievements: ["Best Teacher Award 2022", "STEM Innovation Grant"]
+      name: "Hajra Khan",
+      subject: "Urdu Teacher",
+      qualification: "M.A. in Urdu Literature",
+      experience: "5+ years",
+      bio: "Hajra Khan brings innovative teaching methods and a passion for making Urdu exciting and accessible for all students.",
     },
     {
       id: 2,
-      name: "Prof. James Wilson",
-      subject: "Head of Science Department",
-      qualification: "M.Sc. in Physics",
-      experience: "20+ years",
-      bio: "Professor Wilson leads our award-winning science program. His hands-on approach has inspired countless students to pursue STEM careers.",
-      image: "https://randomuser.me/api/portraits/men/15.jpg",
-      social: {
-        linkedin: "#",
-        email: "j.wilson@eliteacademy.edu"
-      },
-      achievements: ["Science Teacher of the Year", "Research Grant 2023"]
+      name: "Sania Khan",
+      subject: "Science Teacher",
+      qualification: "BS in Physics",
+      experience: "5+ years",
+      bio: "Sania Khan leads our science program. Her hands-on approach has inspired countless students to pursue STEM careers.",
     },
     {
       id: 3,
-      name: "Emily Rodriguez",
-      subject: "English Literature & Language Arts",
+      name: "Sana Khan",
+      subject: "English Teacher",
       qualification: "M.A. in English",
-      experience: "12+ years",
-      bio: "Ms. Rodriguez creates a vibrant literary community where students discover the joy of reading and creative writing. She runs the school's literary magazine.",
-      image: "https://randomuser.me/api/portraits/women/20.jpg",
-      social: {
-        linkedin: "#",
-        email: "e.rodriguez@eliteacademy.edu"
-      },
-      achievements: ["Poetry Awards", "Literary Excellence Recognition"]
+      experience: "5+ years",
+      bio: "Ms. Sana Khan creates a vibrant literary community where students discover the joy of reading and creative writing.",
     },
     {
       id: 4,
-      name: "Dr. Michael Chen",
-      subject: "Computer Science & Robotics",
-      qualification: "Ph.D. in Computer Science",
-      experience: "10+ years",
-      bio: "Dr. Chen leads our cutting-edge robotics program. His students have won multiple national robotics competitions.",
-      image: "https://randomuser.me/api/portraits/men/25.jpg",
-      social: {
-        linkedin: "#",
-        email: "m.chen@eliteacademy.edu"
-      },
-      achievements: ["Robotics Coach of the Year", "Tech Innovation Award"]
+      name: "Aneela Jamil",
+      subject: "Play Group Teacher",
+      qualification: "BS in Early Childhood",
+      experience: "5+ years",
+      bio: "Aneela Jamil is our play group teacher, nurturing young minds with creativity and care. Her engaging activities foster early development and a love for learning.",
     },
     {
       id: 5,
-      name: "Lisa Thompson",
-      subject: "Arts & Music Director",
-      qualification: "B.F.A. in Fine Arts",
-      experience: "18+ years",
-      bio: "Lisa inspires creativity through visual arts and music. Her students have won numerous art competitions and perform at prestigious venues.",
-      image: "https://randomuser.me/api/portraits/women/25.jpg",
-      social: {
-        linkedin: "#",
-        email: "l.thompson@eliteacademy.edu"
-      },
-      achievements: ["Art Educator Award", "Community Arts Recognition"]
+      name: "Saba Khan",
+      subject: "History Teacher",
+      qualification: "M.A. in History",
+      experience: "5+ years",
+      bio: "Saba Khan brings a deep passion for history and a commitment to making the subject engaging and accessible for all students.",
     },
     {
       id: 6,
-      name: "Robert Kumar",
-      subject: "Physical Education & Sports",
-      qualification: "M.P.Ed.",
-      experience: "14+ years",
-      bio: "Coach Kumar has developed championship-winning teams and promotes holistic wellness through sports and fitness programs.",
-      image: "https://randomuser.me/api/portraits/men/32.jpg",
-      social: {
-        linkedin: "#",
-        email: "r.kumar@eliteacademy.edu"
-      },
-      achievements: ["National Coach Certification", "Sports Excellence Award"]
+      name: "Shumaila Khan",
+      subject: "Islamic Studies Teacher",
+      qualification: "M.A. in Islamic Studies",
+      experience: "5+ years",
+      bio: "Shumaila Khan is our Islamic Studies teacher, dedicated to providing students with a comprehensive understanding of the subject.",
     }
   ];
+
+  // Function to get initials for avatar
+  const getInitials = (name) => {
+    return name
+      .split(' ')
+      .map(word => word[0])
+      .join('')
+      .toUpperCase()
+      .slice(0, 2);
+  };
+
+  // Function to get random but consistent color based on name
+  const getAvatarColor = (name) => {
+    const colors = [
+      '#667eea', '#764ba2', '#f093fb', '#4facfe', '#00f2fe', 
+      '#43e97b', '#fa709a', '#fee140', '#30cfd0', '#a8edea'
+    ];
+    let hash = 0;
+    for (let i = 0; i < name.length; i++) {
+      hash = name.charCodeAt(i) + ((hash << 5) - hash);
+    }
+    return colors[Math.abs(hash) % colors.length];
+  };
 
   return (
     <section className="teachers-section" ref={sectionRef}>
@@ -129,15 +116,15 @@ const Teachers = () => {
         {/* Teacher Stats */}
         <div className={`teacher-stats ${isVisible ? 'animate' : ''}`}>
           <div className="stat-card">
-            <div className="stat-number">30+</div>
+            <div className="stat-number">15+</div>
             <div className="stat-label">Expert Faculty</div>
           </div>
           <div className="stat-card">
-            <div className="stat-number">15+</div>
+            <div className="stat-number">5+</div>
             <div className="stat-label">Average Experience</div>
           </div>
           <div className="stat-card">
-            <div className="stat-number">95%</div>
+            <div className="stat-number">100%</div>
             <div className="stat-label">Hold Advanced Degrees</div>
           </div>
           <div className="stat-card">
@@ -155,9 +142,14 @@ const Teachers = () => {
               style={{ animationDelay: `${index * 0.1}s` }}
             >
               <div className="card-inner">
-                {/* Teacher Image */}
+                {/* Teacher Avatar - Profile Image Placeholder */}
                 <div className="teacher-image">
-                  <img src={teacher.image} alt={teacher.name} />
+                  <div 
+                    className="teacher-avatar"
+                    style={{ backgroundColor: getAvatarColor(teacher.name) }}
+                  >
+                    <span className="avatar-initials">{getInitials(teacher.name)}</span>
+                  </div>
                   <div className="image-overlay">
                     <button 
                       className="view-profile-btn"
@@ -188,28 +180,13 @@ const Teachers = () => {
                       <span>{teacher.experience} Experience</span>
                     </div>
                   </div>
-                  
-                  {/* Social Links */}
-                  <div className="teacher-social">
-                    <a href={`mailto:${teacher.social.email}`} className="social-link">
-                      <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2">
-                        <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/>
-                        <polyline points="22,6 12,13 2,6"/>
-                      </svg>
-                    </a>
-                    <a href={teacher.social.linkedin} className="social-link">
-                      <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="currentColor">
-                        <path d="M4.98 3.5c0 1.381-1.11 2.5-2.48 2.5s-2.48-1.119-2.48-2.5c0-1.38 1.11-2.5 2.48-2.5s2.48 1.12 2.48 2.5zm.02 4.5h-5v16h5v-16zm7.982 0h-4.968v16h4.969v-8.399c0-4.67 6.029-5.052 6.029 0v8.399h4.988v-10.131c0-7.88-8.922-7.593-11.018-3.714v-2.155z"/>
-                      </svg>
-                    </a>
-                  </div>
                 </div>
               </div>
             </div>
           ))}
         </div>
 
-        {/* Teacher Profile Modal */}
+        {/* Teacher Profile Modal - Fixed without achievements */}
         {selectedTeacher && (
           <div className="modal-overlay" onClick={() => setSelectedTeacher(null)}>
             <div className="modal-content" onClick={(e) => e.stopPropagation()}>
@@ -217,7 +194,12 @@ const Teachers = () => {
               
               <div className="modal-grid">
                 <div className="modal-image">
-                  <img src={selectedTeacher.image} alt={selectedTeacher.name} />
+                  <div 
+                    className="modal-avatar"
+                    style={{ backgroundColor: getAvatarColor(selectedTeacher.name) }}
+                  >
+                    <span className="modal-initials">{getInitials(selectedTeacher.name)}</span>
+                  </div>
                 </div>
                 
                 <div className="modal-info">
@@ -237,33 +219,11 @@ const Teachers = () => {
                     <h3>About</h3>
                     <p>{selectedTeacher.bio}</p>
                   </div>
-                  
-                  <div className="modal-achievements">
-                    <h3>Achievements</h3>
-                    <ul>
-                      {selectedTeacher.achievements.map((achievement, index) => (
-                        <li key={index}>
-                          <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2">
-                            <polyline points="20 6 9 17 4 12"/>
-                          </svg>
-                          {achievement}
-                        </li>
-                      ))}
-                    </ul>
-                  </div>
-                  
-                  <div className="modal-contact">
-                    <a href={`mailto:${selectedTeacher.social.email}`} className="contact-btn">
-                      Contact Teacher
-                    </a>
-                  </div>
                 </div>
               </div>
             </div>
           </div>
         )}
-
-      
       </div>
     </section>
   );

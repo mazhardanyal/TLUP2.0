@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from 'react';
 import { Link, NavLink } from 'react-router-dom';
 import './Navbar.css';
-import Contactus from '../pages/Contactus';
+import logo from '../assets/logo.jpeg'; // Add your logo file name here
 
 const Navbar = () => {
   const [isOpen, setIsOpen] = useState(false);
@@ -22,11 +22,7 @@ const Navbar = () => {
       <div className="nav-container">
         <Link to="/" className="nav-logo" onClick={closeMenu}>
           <div className="logo-mark">
-            <svg width="32" height="32" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
-              <path d="M16 2L2 9L16 16L30 9L16 2Z" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round"/>
-              <path d="M2 16L16 23L30 16" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round"/>
-              <path d="M2 23L16 30L30 23" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round"/>
-            </svg>
+            <img src={logo} alt="The Level Up School Logo" className="logo-image" />
           </div>
           <div className="logo-text">
             <span className="logo-academy">The Level Up</span>
@@ -84,7 +80,7 @@ const Navbar = () => {
             </li>
             <li>
               <NavLink 
-                to="/Contactus" 
+                to="/contactus" 
                 className={({ isActive }) => isActive ? 'active-link' : ''}
                 onClick={closeMenu}
               >
@@ -94,10 +90,9 @@ const Navbar = () => {
           </ul>
           
           <div className="nav-actions">
-            <Link to={Contactus} className="nav-cta-primary">Enroll Now →</Link>
+            <Link to="/contactus" className="nav-cta-primary">Enroll Now →</Link>
           </div>
         </div>
-
       </div>
     </nav>
   );

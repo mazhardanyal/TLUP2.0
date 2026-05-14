@@ -2,6 +2,7 @@ import React from 'react';
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 import Navbar from './components/Navbar';
 import Footer from './components/Footer';
+import WhatsAppButton from './components/WhatsAppButton';
 import Home from './pages/Home';
 import About from './pages/About';
 import Academics from './pages/Academics';
@@ -24,6 +25,8 @@ function App() {
           </Routes>
         </main>
         <Footer />
+        {/* WhatsApp Button - appears on every page */}
+        <WhatsAppButton />
       </div>
     </Router>
   );

@@ -40,32 +40,36 @@ const PrincipalsMessage = () => {
               <p className="greeting">Dear Parents and Students,</p>
               
               <p>
-                It is with great pride and enthusiasm that I welcome you to The Level Up School. 
-                For over 5 years, we have been committed to creating an environment where 
-                academic excellence meets character development, and where every child is 
-                empowered to reach their full potential.
+               It gives me immense pleasure to welcome you to The Level Up School, 
+  a place where education is not only about academic achievement but 
+  also about inspiring confidence, discipline, and creativity in every child. 
+  Since our establishment, our mission has been to provide students with 
+  a safe, modern, and motivating environment where they can grow into 
+  responsible and successful individuals.
               </p>
               
               <p>
-                At The Level Up School, we believe that education extends far beyond textbooks 
-                and examinations. We focus on nurturing curious minds, building resilient 
-                characters, and fostering a lifelong love for learning. Our dedicated 
-                faculty works tirelessly to ensure that each student receives personalized 
-                attention and guidance.
+                 At The Level Up School, we strongly believe that every student possesses 
+  unique talents and abilities. Our goal is to nurture those talents through 
+  quality education, innovative teaching methods, and continuous encouragement. 
+  We are committed to building strong foundations that prepare students not 
+  only for examinations but also for the real challenges of life.
               </p>
               
               <p>
-                Our holistic approach combines rigorous academics with arts, athletics, 
-                and community service, ensuring that our students graduate as well-rounded 
-                individuals ready to face the challenges of tomorrow. We take pride in our 
-                state-of-the-art facilities, innovative teaching methods, and inclusive 
-                community that celebrates diversity.
+                Our dedicated teachers and staff work passionately to ensure that learning 
+  remains engaging, meaningful, and student-centered. Alongside academics, 
+  we emphasize character building, leadership, teamwork, and moral values 
+  so that our students become confident individuals who contribute positively 
+  to society and their communities.
               </p>
               
               <p>
-                I invite you to visit our campus and experience firsthand the warmth and 
-                excellence that defines The Level Up School. Together, let's build a bright 
-                future for your children.
+                 We continuously strive to improve our facilities, teaching standards, 
+  and educational opportunities to meet the demands of the modern world. 
+  I warmly invite you to become part of The Level Up family and experience 
+  an institution that is committed to excellence, innovation, and the future 
+  success of every student.
               </p>
               
               <div className="message-footer">

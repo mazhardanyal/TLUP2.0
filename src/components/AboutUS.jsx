@@ -55,7 +55,7 @@ const About = () => {
                 Level Up School was founded with a singular vision:
                 to create an educational environment where academic
                 excellence meets character development. Over the
-                past 25+ years, we've grown into one of the region's
+                past 5+ years, we've grown into one of the region's
                 most respected educational institutions, nurturing
                 thousands of successful graduates.
               </p>
@@ -129,26 +129,7 @@ const About = () => {
                 </div>
               </div>
 
-              <div className="feature-item">
-                <div className="feature-icon">
-                  <svg
-                    xmlns="http://www.w3.org/2000/svg"
-                    width="24"
-                    height="24"
-                    viewBox="0 0 24 24"
-                    fill="none"
-                    stroke="currentColor"
-                    strokeWidth="2"
-                  >
-                    <path d="M12 2v4M12 18v4M4.93 4.93l2.83 2.83M16.24 16.24l2.83 2.83M2 12h4M18 12h4M4.93 19.07l2.83-2.83M16.24 7.76l2.83-2.83" />
-                  </svg>
-                </div>
-
-                <div>
-                  <h4>Global Perspective</h4>
-                  <p>International exchange programs and partnerships</p>
-                </div>
-              </div>
+            
 
             </div>
 
@@ -196,12 +177,12 @@ const About = () => {
             <div className="about-stats-grid">
 
               <div className="stat-card">
-                <div className="stat-value">25+</div>
+                <div className="stat-value">5+</div>
                 <div className="stat-label">Years of Excellence</div>
               </div>
 
               <div className="stat-card">
-                <div className="stat-value">2000+</div>
+                <div className="stat-value">500+</div>
                 <div className="stat-label">Happy Students</div>
               </div>
 
@@ -210,10 +191,6 @@ const About = () => {
                 <div className="stat-label">Expert Faculty</div>
               </div>
 
-              <div className="stat-card">
-                <div className="stat-value">30+</div>
-                <div className="stat-label">Countries</div>
-              </div>
 
             </div>
 
@@ -247,7 +224,7 @@ const About = () => {
           <div className="timeline">
 
             <div className="timeline-item">
-              <div className="timeline-year">1995</div>
+              <div className="timeline-year">2022</div>
               <div className="timeline-dot"></div>
 
               <div className="timeline-content">
@@ -257,7 +234,7 @@ const About = () => {
             </div>
 
             <div className="timeline-item">
-              <div className="timeline-year">2005</div>
+              <div className="timeline-year">2023</div>
               <div className="timeline-dot"></div>
 
               <div className="timeline-content">
@@ -267,7 +244,7 @@ const About = () => {
             </div>
 
             <div className="timeline-item">
-              <div className="timeline-year">2015</div>
+              <div className="timeline-year">2024</div>
               <div className="timeline-dot"></div>
 
               <div className="timeline-content">
@@ -277,7 +254,7 @@ const About = () => {
             </div>
 
             <div className="timeline-item">
-              <div className="timeline-year">2024</div>
+              <div className="timeline-year">2026</div>
               <div className="timeline-dot"></div>
 
               <div className="timeline-content">

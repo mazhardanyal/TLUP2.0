@@ -47,8 +47,8 @@ const Hero = () => {
           {/* Animated Badge */}
           <div className="hero-badge-modern">
             <span className="badge-pulse"></span>
-            <span>🌟 Since 2020</span>
-            <span className="badge-accent">| Excellence Since '20</span>
+            <span>🌟 Since 2022</span>
+            <span className="badge-accent">| Excellence Since '22</span>
           </div>
 
           {/* Main Heading */}
@@ -82,7 +82,7 @@ const Hero = () => {
           <div className="trust-indicators">
             <div className="trust-item">
               <div className="trust-number">
-                <span>25+</span>
+                <span>5+</span>
                 <span className="trust-plus">Years</span>
               </div>
               <div className="trust-label">of Excellence</div>
@@ -90,7 +90,7 @@ const Hero = () => {
             <div className="trust-divider"></div>
             <div className="trust-item">
               <div className="trust-number">
-                <span>2000+</span>
+                <span>500+</span>
               </div>
               <div className="trust-label">Happy Students</div>
             </div>

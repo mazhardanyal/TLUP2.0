@@ -1,5 +1,5 @@
 /* ========================================
-   MODERN HERO SECTION - PERFECT RESPONSIVENESS
+   MODERN HERO SECTION - COMPLETE WORKING CSS
    ======================================== */
 
 .hero-modern {
@@ -615,12 +615,6 @@
     animation-delay: 1s;
   }
   
-  .badge-3 {
-    top: 40%;
-    right: -8%;
-    animation-delay: 2s;
-  }
-  
   @keyframes badgeFloat {
     0%, 100% {
       transform: translateY(0);
@@ -700,21 +694,6 @@
     50% {
       transform: translateX(-50%) translateY(10px);
     }
-  }
-}
-
-/* ========================================
-   UTILITY CLASSES
-   ======================================== */
-
-/* Hide on mobile, show on desktop */
-.desktop-only {
-  display: none;
-}
-
-@media (min-width: 1024px) {
-  .desktop-only {
-    display: block;
   }
 }
 

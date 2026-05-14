@@ -85,7 +85,7 @@ const PrincipalsMessage = () => {
               
               <p>
                 It is with great pride and enthusiasm that I welcome you to The Level Up School. 
-                For over 25 years, we have been committed to creating an environment where 
+                For over 5 years, we have been committed to creating an environment where 
                 academic excellence meets character development, and where every child is 
                 empowered to reach their full potential.
               </p>

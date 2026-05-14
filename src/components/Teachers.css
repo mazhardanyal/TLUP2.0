@@ -6,7 +6,7 @@
   overflow: hidden;
 }
 
-.teachers-container {
+.teachers-container { 
   max-width: 1400px;
   margin: 0 auto;
   padding: 0 3rem;
@@ -602,5 +602,69 @@
   
   .modal-content {
     animation: none;
+  }
+}/* Teacher Avatar Styles */
+.teacher-avatar {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: linear-gradient(135deg, #667eea, #764ba2);
+  transition: transform 0.3s ease;
+}
+
+.avatar-initials {
+  font-size: 3rem;
+  font-weight: 700;
+  color: white;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+}
+
+.teacher-image {
+  position: relative;
+  aspect-ratio: 1;
+  overflow: hidden;
+  cursor: pointer;
+}
+
+.teacher-image img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+/* Modal Avatar */
+.modal-avatar {
+  width: 200px;
+  height: 200px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 0 auto;
+  background: linear-gradient(135deg, #667eea, #764ba2);
+}
+
+.modal-initials {
+  font-size: 4rem;
+  font-weight: 800;
+  color: white;
+  text-transform: uppercase;
+}
+
+@media (max-width: 768px) {
+  .avatar-initials {
+    font-size: 2rem;
+  }
+  
+  .modal-avatar {
+    width: 120px;
+    height: 120px;
+  }
+  
+  .modal-initials {
+    font-size: 2.5rem;
   }
 }
