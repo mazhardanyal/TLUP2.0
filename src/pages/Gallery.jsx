@@ -9,8 +9,8 @@ import class3 from '../assets/classe.jpeg';
 import class4 from '../assets/cla.jpeg';
 import class5 from '../assets/class.jpeg';
 import class6 from '../assets/clased.jpeg';
-import video from '../assets/video.mp4';
-import video2 from '../assets/video2.mp4';
+import video from '../assets/vid.mp4';
+import video2 from '../assets/videoo.mp4';
 
 const Gallery = () => {
   const [selectedMedia, setSelectedMedia] = useState(null);

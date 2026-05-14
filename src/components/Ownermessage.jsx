@@ -1,7 +1,7 @@
 import React from 'react'
 import  { useEffect, useRef, useState } from 'react';
 import './Ownermessage.css';
-import owner from '../assets/owner.jpeg';
+import owner from '../assets/ow.jpeg';
 
 const PrincipalsMessage = () => {
   const [isVisible, setIsVisible] = useState(false);

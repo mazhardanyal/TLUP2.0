@@ -1,7 +1,7 @@
 import React from 'react'
 import  { useEffect, useRef, useState } from 'react';
 import { Link } from 'react-router-dom';
-import class9 from "../assets/class9.jpeg";
+import class9 from "../assets/clased.jpeg";
 import './AboutUS.css';
 
 const About = () => {
