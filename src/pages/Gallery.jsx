@@ -9,8 +9,8 @@ import class3 from '../assets/class3.jpeg';
 import class4 from '../assets/class4.jpeg';
 import class5 from '../assets/class5.jpeg';
 import class6 from '../assets/class6.jpeg';
-import Video from '../assets/video.mp4';
-import Video2 from '../assets/video2.mp4';
+import video from '../assets/video.mp4';
+import video2 from '../assets/video2.mp4';
 
 const Gallery = () => {
   const [selectedMedia, setSelectedMedia] = useState(null);
@@ -84,16 +84,16 @@ const Gallery = () => {
       type: 'video',
       title: 'School Tour Video',
       description: 'Take a virtual tour of our campus',
-      videoUrl: Video,  // Local video file
-      thumbnail: class1,  // Use an image as thumbnail
+      videoUrl: video,  // Local video file
+      thumbnail: class9,  // Use an image as thumbnail
     },
     {
       id: 11,
       type: 'video',
       title: 'School Tour Video',
       description: 'Take a virtual tour of our campus',
-      videoUrl: Video2,  // Local video file
-      // thumbnail: class1,  // Use an image as thumbnail
+      videoUrl: video2,  // Local video file
+      thumbnail: class4,  // Use an image as thumbnail
     },
   ];
 

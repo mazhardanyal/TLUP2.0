@@ -1,7 +1,7 @@
 import React from 'react'
 import  { useEffect, useRef, useState } from 'react';
 import './Ownermessage.css';
-import Owner from '../assets/Owner.JPEG';
+import owner from '../assets/owner.jpeg';
 
 const PrincipalsMessage = () => {
   const [isVisible, setIsVisible] = useState(false);
@@ -108,7 +108,7 @@ const PrincipalsMessage = () => {
             <div className="photo-frame">
               <div className="photo-placeholder">
                 <img
-                  src={Owner}
+                  src={owner}
                   alt="Owner"
                   className="school-main-img"
                 />
